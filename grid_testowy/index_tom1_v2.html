@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Poczet krakowski Tom I</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Link na fonty zgodne z linią graficzną - uwaga są "ciężkie" Docelowo dodać podpięcie do czcionek z katalogu fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+    <!--Dorobić favicon-->
+    <!--<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">-->
+    <!--Podpięcie głównego arkusza styli-->
+    <link rel="stylesheet" href="css_tom1/style_tom1.css">
+
+
+
+</head>
+
+<body>
+
+
+
+    <div class="header" id="myHeader">
+
+        <h1>Poczet krakowski Tom I</h1>
+        <p>Kliknięcie w przycisk wyświetla strony ksiażki w trzech rozmiarach (w jednej, dwóch lub czterech kolumnach):</p>
+        <!--Pagination buttons-->
+
+        <button class="btn" onclick="one()" id="btn1">Duże</button>
+        <button class="btn active" onclick="two()" id="btn2">Średnie</button>
+        <button class="btn" onclick="four()" id="btn4">Małe</button>
+    </div>
+
+    <!--Create general row and 4 columns system-->
+
+    <div class="row">
+        <div class="column">
+
+            <!--  img["img_tom1/bj_tom1_Strona_$$$.png"]*212-->
+                      
+
+            <!-- .img$(img["img_tom1/bj_tom1_Strona_$$$.png"])*3     -->
+
+            .img$(img["img_tom1/bj_tom1_Strona_$$$.png"])*848   
+                     
+        </div>
+        <div class="column">
+            
+                  
+        </div>
+        <div class="column">
+           
+           
+            
+
+        </div>
+        <div class="column">
+            
+
+        </div>
+    </div>
+
+
+    <script src="js_tom1/main_tom1.js"></script>
+</body>
+
+</html>
